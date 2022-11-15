@@ -1,0 +1,33 @@
+.fourth{
+    align-items: center;
+    background-color:#013B2D;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.fourth_title{
+    color: #C3A250;
+    font-family: 'Great Vibes', cursive;
+    font-size: 300%;
+}
+
+.fourth_text{
+    color: #C3A250;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fourth_text i{
+    font-size: 250%;
+}
+
+.fourth img{
+    width: 50%;
+}
+
+footer{
+    overflow: hidden;
+}
