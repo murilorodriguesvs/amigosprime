@@ -5,7 +5,7 @@
     flex-direction: column;
     height: 100vh;
     justify-content: space-around;
-    padding: 5%;
+    padding: 6%;
 }
 
 .fourth_title{
@@ -17,7 +17,7 @@
 .fourth_text{
     color: #C3A250;
     font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Philosopher', sans-serif;
 }
 
 .fourth_text i{
@@ -26,6 +26,112 @@
 
 .fourth img{
     width: 50%;
+}
+
+.cardapio, .bebida{
+    background-color: #C3A250;
+    border: 3px solid #59462E;
+    border-radius: .35em;
+    box-shadow: inset -5px -5px 25px #59462ed5;
+    color: #59462E;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    padding: .7em;
+    width: 7em;
+}
+
+.cardapio:hover, .bebida:hover{
+    cursor: pointer;
+    box-shadow: inset -10px -10px 35px #59462ed5;;
+}
+
+.modal_cardapio{
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 3000;
+}
+
+.modal_cardapio.mostrar{
+    display: flex;
+}
+
+.modal{
+    background-color: #D9BEA7;
+    border: 5px solid #59462E;
+    box-shadow: 0 0 0 10px #D9BEA7;
+    padding: 1em;
+    position: relative;
+    width: 60%;
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal{
+    animation: modal .3s;
+}
+
+.fechar{
+    background-color: #59462E;
+    border: 5px solid #D9BEA7;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .75);
+    cursor: pointer;
+    color: #D9BEA7;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+}
+
+.title_cardapio{
+    color:#59462E;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.7em;
+    text-align: center;
+}
+
+.tipo_prato{
+    color: #59462E;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    padding: .35em .5em;
+}
+
+.prato{
+    color: #59462E;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.75em;
+    padding: 0.15em 2em;
+}
+
+.prato_descricao{
+    color: #59462E;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1em;
+    margin: 5px .5em;
+    padding: 0 2.5em;
 }
 
 footer{

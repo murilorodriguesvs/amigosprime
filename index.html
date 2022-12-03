@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Philosopher&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/principal.css">
     <link rel="stylesheet" href="./CSS/second.css">
@@ -18,7 +21,8 @@
 
 <body>
     <audio autoplay>
-        <source src="./Andy Williams - It's the Most Wonderful Time of the Year (Official Audio) (320 kbps).mp3" type="audio/mp3" />
+        <source src="./Andy Williams - It's the Most Wonderful Time of the Year (Official Audio) (320 kbps).mp3"
+            type="audio/mp3" />
         seu navegador não suporta HTML5
     </audio>
     <section class="principal">
@@ -26,7 +30,10 @@
         <div class="stars"></div>
         <div class="crawl" id="crawl">
             <img class="principal_container__img" src="./img/coollogo_com-10005491.png" alt="Amigos Prime">
-            Há muito tempo, em uma Goiânia longínqua, um grupo de amigos busca um motivo qualquer para se encontrar, comer e beber. Em 2021 o mundo estremeceu diante o que viu, e eles prometeram voltar. Um ano depois, novos personagens... alguns ficaram para trás (uns sorriram, outros choraram). Um novo local, uma nova promessa, mas a mesma dúvida: quem ainda está dando o calote?
+            Há muito tempo, em uma Goiânia longínqua, um grupo de amigos busca um motivo qualquer para se encontrar,
+            comer e beber. Em 2021 o mundo estremeceu diante o que viu, e eles prometeram voltar. Um ano depois, novos
+            personagens... alguns ficaram para trás (uns sorriram, outros choraram). Um novo local, uma nova promessa,
+            mas a mesma dúvida: quem ainda está dando o calote?
         </div>
     </section>
     <section class="second">
@@ -65,10 +72,10 @@
             <article class="second_card option1">
                 <div>
                     <h2>
-                       &#x26C4 Mrs. Caetano Farinha
+                        &#x26C4 Mrs. Caetano Farinha
                     </h2>
                     <h3>
-                        Por incompatibilidade de horário e divergências na assinatura de contratos, Moniele Caetano não
+                        Por incompatibilidade de contrato e divergências na assinatura de contratos, Moniele Caetano não
                         esteve presente na primeira edição do evento, mas a novidade desse ano promete. Em outros
                         momentos declarou que já está confirmada em todas as outras futuras edições.
                     </h3>
@@ -91,7 +98,7 @@
             <article class="second_card option1">
                 <div>
                     <h2>
-                        &#x1F341 Pedro da Juh e da Alluka
+                        &#x1F341 Pedro
                     </h2>
                     <h3>
                         É nerd do TI que você pediu? Mas não se deixe enganar, apesar do seu trabalho consertando
@@ -105,7 +112,7 @@
             <article class="second_card option2">
                 <div>
                     <h2>
-                       &#x1F3B8 Juliana
+                        &#x1F3B8 Juliana
                     </h2>
                     <h3>
                         A única capaz de laçar e dominar o maravilhoso coração de Pedro, Juliana está presente desde os
@@ -118,7 +125,7 @@
             <article class="second_card option1">
                 <div>
                     <h2>
-                       &#x1F344 Luigi Avelar
+                        &#x1F344 Luigi Avelar
                     </h2>
                     <h3>
                         Nossa cota medb0qu3t3. Luigi já garantiu que vem para fazer história. "Natal é santo, mas eu não
@@ -130,10 +137,10 @@
             <article class="second_card option2">
                 <div>
                     <h2>
-                       &#x1F37B Gabi Advogata
+                        &#x1F37B Gabi Advogata
                     </h2>
                     <h3>
-                        Sem saber o que esprar de certos convidados... Trouxemos nossa advogada. Mas ela mesma já
+                        Sem saber o que esprar de certos convidados... Trouxemos nossa advogada. Mas ela mesma da
                         garantiu "Não vou responder nem por mim. Vocês que se virem"
                     </h3>
                 </div>
@@ -142,7 +149,7 @@
             <article class="second_card option1">
                 <div>
                     <h2>
-                        &#x1F385	???
+                        &#x1F385 ???
                     </h2>
                     <h3>
                         Afinal de contas quem é esse? Não sabemos ao certo, por isso em último. Mas menino peralta que
@@ -162,17 +169,52 @@
     </section>
     <section class="fourth">
         <h1 class="fourth_title">&#x1F4B8 É natal, mas não é caridade... &#x1F64F</h1>
-        <h2 class="fourth_text"><i>&#x1F5E8</i> Para financiar o evento é necessário dinheiro. Para ter dinheiro para bancar os outros é necessário ser rico. Então colabore enviando o pix.
+        <h2 class="fourth_text"><i>&#x1F5E8</i> Para financiar o evento é necessário dinheiro. Para ter dinheiero para
+            bancar os outros é necessário ser rico. Então colabore enviando o pix.
             Se você foi convidado por alguém, sugiro que mande essa pessoa pagar, afinal de contas ela te convidou.
             Ajude-nos a financiar a comida e a bebida.
         </h2>
+        <button class="cardapio" id="cardapio">Pratos</button>
+        <button class="bebida" id="bebida">Bebidas</button>
         <img src="./img/pix.png" alt="" id="pix">
     </section>
     <footer>
         <img src="./img/fim.png" alt="">
-    </footer>  
+    </footer>
+
+    <div class="modal_cardapio" id="modal_cardapio">
+        <div class="modal" id="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h1 class="title_cardapio">Cardápio</h1>
+            <h2 class="tipo_prato">Entrada:</h2>
+            <h3 class="prato">Guacamole</h3>
+            <h4 class="prato_descricao">Nada mais natalino do que um prato típico mexicano. Começamos nossa noite com um Guacamole acompanhada de doritos.</h4>
+            <h2 class="tipo_prato">Prato Principal:</h2>
+            <h3 class="prato">Arroz com Alho Poró e Dedo de Moça</h3>
+            <h4 class="prato_descricao">Tradicional prato da Chef Maria, um belo acompanhamento que vai apetitar todos os convidados</h4>
+            <h3 class="prato">Fricassê</h3>
+            <h4 class="prato_descricao">Um delícia de frango que não precisa de descrição. Se você não conhece, vai conhecer...</h4>
+            <h2 class="tipo_prato">Sobremesa:</h2>
+            <h3 class="prato">Mousse de Maracujá</h3>
+            <h4 class="prato_descricao">Nada mais gostoso que uma deliciosa mousse de maracujá. Uma receita dedicada a Igor Alves</h4>         
+        </div>
+    </div>
+
+    <div class="modal_cardapio" id="modal_bebida">
+        <div class="modal" id="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h1 class="title_cardapio">Bebidas</h1>
+            <h2 class="tipo_prato">Caipirinha:</h2>
+            <h4 class="prato_descricao">Open (lembre que open não é infinito) caipirinha.</h4>
+            <h2 class="tipo_prato">Vinho</h2>
+            <h4 class="prato_descricao">Uma carta completa de vinhos tintos e brancos para todo mundo ficar doidão.</h4>
+            <h2 class="tipo_prato">Água</h2>
+            <h4 class="prato_descricao">Totalmente open água.</h4>
+        </div>
+    </div>
 </body>
 
 <script src="./contador.js"></script>
+<script src="./modal.js"></script>
 
 </html>
